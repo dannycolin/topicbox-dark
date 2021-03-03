@@ -1,0 +1,193 @@
+/* ==UserStyle==
+@name           Topicbox Dark
+@namespace      github.com/dannycolin/topicbox-dark
+@version        0.1.0
+@description    A Dark Theme for Topicbox
+@author         Danny Colin
+@homepageURL    https://github.com/dannycolin/topicbox-dark
+@updateURL      https://github.com/dannycolin/topicbox-dark/raw/master/topicbox-dark.user.css
+@license				MPL-2.0
+==/UserStyle== */
+
+@-moz-document regexp("https://.*\\.topicbox\\.com.*") {
+	:root {
+		--grey-10: #f9f9fa;
+		--grey-10-a10: rgba(249, 249, 250, 0.1);
+		--grey-10-a20: rgba(249, 249, 250, 0.2);
+		--grey-30: #d7d7db;
+		--grey-40: #b1b1b3;
+
+		--blue-70: #3e4c58;
+		--blue-80: #29323a;
+		--blue-90: #14181c;
+	}
+
+	html {
+		color: var(--grey-10);
+	}
+
+	.u-article a,
+	.v-GroupSummary-link {
+		color: #45a1ff;
+	}
+	.u-article a:hover,
+	.v-GroupSummary-link:hover {
+		color: #0060df;
+	}
+
+	.v-OverviewThreadItem-total,
+	.v-ThreadItem-total {
+		color: var(--blue-90);
+	}
+
+	.v-OverviewThreadItem-preview,
+	.v-OverviewThreadItem-time,
+	.v-GroupItem-privacy,
+	.v-GroupItem-stats,
+	.v-TabBar-link,
+	.v-ThreadItem-preview,
+	.v-ThreadItem-time {
+		color: var(--grey-40);
+	}
+
+	.v-OverviewThreadItem-plus {
+		border: 0.06rem solid var(--blue-80);
+		color: var(--blue-90);
+	}
+
+	.v-ThreadItem .v-Avatar {
+		border: 0.06rem solid var(--blue-80);
+	}
+
+	.v-PageNav-close > .v-Icon,
+	.v-PageNav-open > .v-Icon {
+		fill: var(--grey-10);
+	}
+
+	.v-PageNav-close > .v-Icon,
+	.v-PageNav-open > .v-Icon {
+		background: var(--blue-70);
+		color: var(--blue-90);
+	}
+
+	.v-Page.is-fullWidth .v-PageNav {
+		box-shadow: 0 0.31rem 0.63rem var(--blue-90);
+	}
+
+	.v-Message-actions:hover > .label {
+		background: var(--blue-70);
+	}
+
+	.v-PopOver {
+		background: var(--blue-70);
+		color: var(--grey-10);
+	}
+
+	.v-MenuOption + .v-MenuOption > .v-Button {
+		border-top: 0.06rem solid var(--grey-10-a20);
+	}
+
+	.v-MenuOption.is-focused > .v-Button,
+	.v-MenuOption.is-focused > .v-MenuButton.is-active {
+		background: var(--grey-10-a10);
+	}
+
+	.v-PopOver-triangle {
+		background-color: var(--blue-70);
+	}
+
+	.v-ColorMenu .v-MenuOption {
+		border: 0.25rem solid var(--blue-70);
+	}
+
+	.v-Page,
+	.v-PageContent,
+	.v-PageHeader,
+	.v-PageHeader::after,
+	.v-PageHeader::before,
+	.v-PageNav,
+	.v-PageNav-header,
+	.v-Compose,
+	.v-ThreadItem-link,
+	.v-ItemList {
+		background: var(--blue-80);
+	}
+
+	.v-PageContent {
+	  box-shadow: none;
+	}
+
+	.v-StickToBottom.is-fixed .v-StickToBottom-content {
+	  box-shadow: 0 0 0.63rem 0.63rem var(--blue-80);
+  }
+
+	.v-Sidebar-item:hover {
+		background: var(--grey-10-a10);
+	}
+
+	.v-RichText, .v-Text {
+		background-color: var(--blue-90);
+		border: 0.06rem solid var(--blue-70);
+	}
+
+	.v-RichText-toolbar {
+		background-image: linear-gradient(var(--blue-70), var(--blue-80));
+	}
+
+	.v-RichText-toolbar .v-Button.is-active,
+	.v-RichText-toolbar .v-Button.is-active:hover,
+	.v-RichText-toolbar .v-Button:active {
+		background-image: linear-gradient(var(--grey-10-a10), var(--grey-10-a20));
+		border-color: var(--grey-40);
+	}
+
+	.v-RichText-toolbar + .v-RichText-input {
+		border-top: 0.06rem solid var(--blue-70);
+	}
+
+	.u-article blockquote,
+	.u-article blockquote blockquote,
+	.u-article blockquote blockquote blockquote {
+		color: #009688;
+		background-color: var(--grey-10-a10);
+	}
+	.u-article blockquote blockquote blockquote blockquote,
+	.u-article blockquote blockquote blockquote blockquote blockquote {
+		color: #009688;
+		background-color: transparent;
+	}
+
+	.v-PageHeader,
+	.v-PageNav-header,
+	.v-Message {
+		border-bottom: 0.06rem solid var(--blue-70);
+	}
+
+	.v-MessageSummary-inView {
+		background: var(--blue-70);
+	}
+
+	.v-Message-time,
+	.u-colour-unimportant {
+		color: var(--grey-30);
+	}
+
+	.u-colour-1 {
+		color: #a67cdf;
+	}
+	.u-colour-3 {
+		color: #e96603;
+	}
+	.u-colour-4 {
+		color: #5e174d;
+		color: #df7cc7;
+	}
+
+	.u-dialog-banner--sticky {
+		box-shadow: 0 0 1em .75em var(--blue-70);
+	}
+	.u-dialog-banner {
+		border: 0.06rem solid rgba(0,0,0,.15);
+		background: var(--blue-70);
+	}
+}
